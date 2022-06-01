@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "full screen",
+	"version": "1.0",
+	"description": "全屏模式",
+	"author": "linluo.",
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content-script.js"]
+		}
+	],
+	"web_accessible_resources": 
+	[
+		"inject.js"
+	]
+}
