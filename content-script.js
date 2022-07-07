@@ -34,6 +34,7 @@
       justify-content: center;
       align-items: center;
       width: 30px;
+      z-index: 999;
       height: 30px;
       padding: 10px;
       font-size: 14px;
