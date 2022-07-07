@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "Mark",
+	"version": "2.0",
+	"description": "新增书签",
+	"author": "linluo.",
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content-script.js"]
+		}
+	],
+	"web_accessible_resources": 
+	[
+		"inject.js"
+	]
+}
