@@ -57,7 +57,8 @@ function writeMark() {
     
   var host = window.location.host;
   var href = window.location.href;
-    console.log('已写入', href)
+    alert('已写入', href);
+
     localStorage.setItem(host, href)
   })
 
